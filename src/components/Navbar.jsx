@@ -24,11 +24,11 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <nav className={cn(
-            "fixed w-full z-40 transition-all duration-300",
-            isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
-        )}>
-            <div className="container flex items-center justify-between">
+       <nav className={cn(
+    "fixed w-full z-40 transition-all duration-300",
+    isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+)}>
+    <div className="container flex items-center justify-between relative"> {/* <-- added 'relative' */}
                 <a className="text-xl font-bold text-primary flex items-center" href="#hero"
                 >
                     <span className="relative z-10 ">
@@ -56,7 +56,8 @@ export const Navbar = () => {
                     </button>
 
                     {/* Phone */} 
-                    <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+                    <div className={cn("absolute top-0 left-0 w-screen h-screen bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+
                         "transition-all duration-300 md:hidden",
                         isMenuOpen 
                         ? "opacity-100 pointer-events-auto"

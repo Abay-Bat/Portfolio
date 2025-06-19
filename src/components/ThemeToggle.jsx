@@ -4,7 +4,7 @@ import { cn } from "../lib/utils";
 
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [scrolled, setScrolled] = useState(false); // NEW
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -17,10 +17,9 @@ export const ThemeToggle = () => {
     }
   }, []);
 
-  // NEW: Scroll event to adjust top position
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10); // change threshold if needed
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -43,15 +42,18 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden right-10 z-50 p-2 rounded-full transition-all duration-300",
-        "focus:outline-hidden",
-        scrolled ? "top-2" : "top-3" // dynamically change top position
+        "fixed z-50 rounded-full transition-all duration-300 focus:outline-none",
+        scrolled ? "top-2" : "top-3",
+        // Responsive positioning
+        "right-5 max-sm:right-auto max-sm:left-1",
+        // Responsive size
+        "p-2 sm:p-2 max-sm:p-1"
       )}
     >
       {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-300" />
+        <Sun className="sm:h-6 sm:w-6 max-sm:h-4 max-sm:w-4 text-yellow-300" />
       ) : (
-        <Moon className="h-6 w-6 text-blue-900" />
+        <Moon className="sm:h-6 sm:w-6 max-sm:h-4 max-sm:w-4 text-blue-900" />
       )}
     </button>
   );

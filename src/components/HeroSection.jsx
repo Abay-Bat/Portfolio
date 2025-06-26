@@ -13,9 +13,7 @@ export const HeroSection = () =>{
 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am a multilingual SDU graduate and frontend developer with a strong technical foundation in React, Tailwind CSS, JavaScript, and Vite. As a graduate of the NFactorial frontend bootcamp and a recipient of a golden certificate in JavaScript, I have developed and deployed responsive, user-focused web applications integrating public APIs and browser storage. 
-                    In addition to my IT background, I am fluent in Kazakh, Russian, English (C1), & Chinese (HSK 3).
-                     With over 1,850 English lessons taught and experience interpreting at more than 35 international events, I bring a unique combination of technical expertise and cross-cultural communication skills.
+            Multilingual SDU graduate and frontend developer with expertise in React, Tailwind CSS, and JavaScript. NFactorial bootcamp alumnus with experience developing responsive, API-integrated applications. Proficient in four languages, with a strong background in teaching and cross-cultural communication.
                 </p>
                 <div className=" pt-4 opacity-0 animate-fade-in-delay-4">
                     <a href="#project" className="cosmic-button">

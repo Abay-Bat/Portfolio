@@ -39,7 +39,7 @@ export const AboutSection = () => {
                         <div className="text-left">
                             <h4 className="font-semibold text-lg">Engineering Scalable Web Solutions</h4>
                             <p className="text-muted-foreground">
-                                I craft high-performance, responsive apps using React and modern UI frameworks.
+                                I build fast, responsive apps with React and modern UI tools.
                             </p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ export const AboutSection = () => {
                          <div className="text-left">
                             <h4 className="font-semibold text-lg">Creating Seamless User Experiences</h4>
                             <p className="text-muted-foreground">
-                                I design intuitive, accessible interfaces with a strong focus on usability, performance, and cross-device consistency.
+                              I design intuitive, high-performance interfaces for all devices.
                             </p>
                         </div>
                     </div></div>
@@ -64,7 +64,8 @@ export const AboutSection = () => {
                          <div className="text-left">
                             <h4 className="font-semibold text-lg">Delivering Clean & Maintainable Code</h4>
                             <p className="text-muted-foreground">
-                                I follow best practices in architecture and development to build reliable, scalable applications ready for real-world use.
+                               I build reliable, scalable apps using best development practices.
+
                             </p>
                         </div>
                     </div></div>

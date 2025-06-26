@@ -13,9 +13,10 @@ export const AboutSection = () => {
                 <h3 className="text-2xl font-semibold">Frontend Developer with a Global Perspective</h3>
                 
                
-            <p className="text-muted-foreground">I build responsive, user-friendly web apps using React and Tailwind CSS, combining technical expertise with multilingual communication skills.</p>
+            <p className="text-muted-foreground">I create responsive apps with React and Tailwind, bridging tech and languages.</p>
            
-            <p className="text-muted-foreground">With a background in language education and international interpretation, I bring clarity, precision, and a user-first mindset to every project I develop.</p>
+            <p className="text-muted-foreground">With a background in language and interpretation, I bring clarity and a user-first approach to every project.
+</p>
 
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">

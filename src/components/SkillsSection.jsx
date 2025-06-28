@@ -6,53 +6,35 @@ export const SkillsSection = () => {
 
    
   const skills = [
-    // Frontend Core
-    { name: "HTML/CSS", level: 95, category: "frontend" },
-    { name: "JavaScript", level: 90, category: "frontend" },
-    { name: "React", level: 88, category: "frontend" },
-    { name: "Tailwind CSS", level: 85, category: "frontend" },
-    { name: "TypeScript", level: 80, category: "frontend" },
-    { name: "Vite", level: 78, category: "tools" },
-    { name: "Redux", level: 75, category: "frontend" },
-    { name: "Next.js", level: 70, category: "frontend" },
+     // Core Frontend
+  { name: "HTML/CSS", level: 95, category: "frontend" },
+  { name: "JavaScript", level: 90, category: "frontend" },
+  { name: "React", level: 88, category: "frontend" },
+  { name: "Tailwind CSS", level: 85, category: "frontend" },
+  { name: "TypeScript", level: 80, category: "frontend" },
+  { name: "Next.js", level: 70, category: "frontend" },
+  { name: "Redux", level: 75, category: "frontend" },
+  { name: "Responsive Design", level: 90, category: "frontend" },
+  { name: "Framer Motion", level: 75, category: "frontend" },
 
-    // Styling & Animation
-    { name: "Responsive Design", level: 90, category: "frontend" },
-    { name: "Framer Motion", level: 75, category: "frontend" },
-    { name: "ShadCN/UI", level: 70, category: "frontend" },
+  { name: "Node.js", level: 70, category: "backend" },
+  { name: "REST APIs", level: 85, category: "backend" },
 
-    // Backend & Data
-    { name: "Node.js", level: 70, category: "backend" },
-    { name: "Express.js", level: 65, category: "backend" },
-    { name: "MongoDB", level: 65, category: "database" },
-    { name: "Firebase", level: 60, category: "backend" },
-    { name: "REST APIs", level: 85, category: "backend" },
-    { name: "JSON", level: 92, category: "data" },
+  // Tools
+  { name: "Vite", level: 78, category: "tools" },
+  { name: "Git/GitHub", level: 85, category: "tools" },
+  { name: "VS Code", level: 90, category: "tools" },
+  { name: "Chrome DevTools", level: 88, category: "tools" },
 
-    // Tools & Platforms
-    { name: "Git/GitHub", level: 85, category: "tools" },
-    { name: "NPM/Yarn", level: 82, category: "tools" },
-    { name: "VS Code", level: 90, category: "tools" },
-    { name: "Vercel/Netlify", level: 80, category: "tools" },
-    { name: "Chrome DevTools", level: 88, category: "tools" },
-
-    // Languages & Communication
-    { name: "English (C1)", level: 95, category: "language" },
-    { name: "Kazakh", level: 100, category: "language" },
-    { name: "Russian", level: 100, category: "language" },
-    { name: "Chinese (HSK 3)", level: 60, category: "language" },
-
-    // Soft & Other Skills
-    { name: "Public Speaking", level: 90, category: "soft" },
-    { name: "Translation/Localization", level: 95, category: "soft" },
-    { name: "Team Collaboration", level: 85, category: "soft" },
-    { name: "Project Management", level: 75, category: "soft" },
-    { name: "UI/UX Thinking", level: 80, category: "design" }
-  ];
+  // Languages
+  { name: "English (C1)", level: 95, category: "language" },
+  { name: "Kazakh", level: 100, category: "language" },
+  { name: "Russian", level: 100, category: "language" }
+];
   
  const filteredSkills = skills.filter((skill) => activeCategory === "all" || skill.category === activeCategory );
 
-  const categories = ["all", "frontend", "backend", "tools", "database", "data", "language", "soft", "design"]
+  const categories = ["all", "frontend", "backend", "tools", , "language",]
 
   return (
     <section id="skill" className="py-24 px-4 relative bg-secondary/30">

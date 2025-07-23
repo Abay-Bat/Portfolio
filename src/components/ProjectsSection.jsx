@@ -3,18 +3,20 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "JumysTap",
-    description: "Job platform for skill-based hiring.",
-    image: "./projects/JumysTap.png",
+    title: "ArtNovus",
+    description: "Platform connecting clients with trusted construction experts.",
+    image: "./projects/ArtNovus.png",
     tags: ["React", "Form Handling", "LocalStorage"],
-    gitHubURL: "https://github.com/Abay-Bat/Project-1-Jumys-Tap-Desktop",
+    launchURL: "https://the-project-git-main-abays-projects-9652a2b4.vercel.app/",
+    gitHubURL: "https://github.com/Abay-Bat/ArtNovus",
   },
   {
     id: 2,
     title: "Media_as_Medium",
     description: "News app fetching and displaying articles from the NYT API.",
     image: "./projects/Media_as_Medium.png",
-    tags: ["API Integration", "Async/Await", "Dynamic Routing","Data Fetching"],
+    tags: ["API Integration", "Async/Await", "Dynamic Routing", "Data Fetching"],
+    launchURL: "https://abay-bat.github.io/Project-3-Media_As_Medium/",
     gitHubURL: "https://github.com/Abay-Bat/Project-3-Media_As_Medium",
   },
   {
@@ -23,6 +25,7 @@ const projects = [
     description: "Feature-rich task manager with persistent state and task filters.",
     image: "./projects/To_Do_App.png",
     tags: ["React Hooks", "State Management", "Conditional Rendering", "UX Design"],
+    launchURL: "https://project-4-to-do-app.vercel.app/",
     gitHubURL: "https://github.com/Abay-Bat/Project-4-To-Do-App",
   },
 ];
@@ -36,17 +39,15 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-         Projects highlighting skills in React, UI, and web development.
+          Projects highlighting skills in React, UI, and web development.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <a
+            <div
               key={project.id}
-              href={project.gitHubURL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover transition-transform hover:scale-[1.01] block"
+              onClick={() => window.open(project.launchURL, "_blank")}
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover transition-transform hover:scale-[1.01] block cursor-pointer"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -69,12 +70,21 @@ export const ProjectsSection = () => {
                 </div>
 
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-                <div className="flex items-center text-foreground/80">
-                  <Github size={20} />
+                <p className="text-muted-foreground text-sm mb-4">
+                  {project.description}
+                </p>
+
+                <div
+                  className="flex items-center text-foreground/80"
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent triggering the card's onClick
+                    window.open(project.gitHubURL, "_blank");
+                  }}
+                >
+                  <Github size={20} className="hover:text-primary transition-colors" />
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
 

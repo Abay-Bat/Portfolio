@@ -7,7 +7,7 @@ const projects = [
     description: "Platform connecting clients with trusted construction experts.",
     image: "./projects/ArtNovus.png",
     tags: ["React", "Form Handling", "LocalStorage"],
-    launchURL: "https://the-project-git-main-abays-projects-9652a2b4.vercel.app/",
+    launchURL: "https://www.artnovus.kz/",
     gitHubURL: "https://github.com/Abay-Bat/ArtNovus",
   },
   {

@@ -21,12 +21,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "ToDo App",
+    title: "ToDo app",
     description: "Feature-rich task manager with persistent state and task filters.",
     image: "./projects/To_Do_App.png",
     tags: ["React Hooks", "State Management", "Conditional Rendering", "UX Design"],
-    launchURL: "https://project-4-to-do-app.vercel.app/",
-    gitHubURL: "https://github.com/Abay-Bat/Project-4-To-Do-App",
+    launchURL: "https://janalyqtar.vercel.app/",
+    gitHubURL: "https://github.com/Abay-Bat/Qazaq-News.git",
   },
 ];
 

@@ -16,8 +16,8 @@ const projects = [
     description: "News app fetching and displaying articles from the NYT API.",
     image: "./projects/Media_as_Medium.png",
     tags: ["API Integration", "Async/Await", "Dynamic Routing", "Data Fetching"],
-    launchURL: "https://abay-bat.github.io/Project-3-Media_As_Medium/",
-    gitHubURL: "https://github.com/Abay-Bat/Project-3-Media_As_Medium",
+    launchURL: "https://janalyqtar.vercel.app/",
+    gitHubURL: "https://github.com/Abay-Bat/Qazaq-News.git",
   },
   {
     id: 3,
@@ -25,8 +25,8 @@ const projects = [
     description: "Feature-rich task manager with persistent state and task filters.",
     image: "./projects/To_Do_App.png",
     tags: ["React Hooks", "State Management", "Conditional Rendering", "UX Design"],
-    launchURL: "https://janalyqtar.vercel.app/",
-    gitHubURL: "https://github.com/Abay-Bat/Qazaq-News.git",
+    launchURL: "https://project-4-to-do-app.vercel.app/",
+    gitHubURL: "https://github.com/Abay-Bat/mini_task-toDo_list.git",
   },
 ];
 

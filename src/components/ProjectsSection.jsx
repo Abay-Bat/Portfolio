@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Media_as_Medium",
+    title: "Qazaq News",
     description: "News app fetching and displaying articles from the NYT API.",
     image: "./projects/Media_as_Medium.png",
     tags: ["API Integration", "Async/Await", "Dynamic Routing", "Data Fetching"],
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "To_Do_App",
+    title: "ToDo App",
     description: "Feature-rich task manager with persistent state and task filters.",
     image: "./projects/To_Do_App.png",
     tags: ["React Hooks", "State Management", "Conditional Rendering", "UX Design"],

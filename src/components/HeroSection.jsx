@@ -12,9 +12,9 @@ export const HeroSection = () =>{
   <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Abay </span>
 </h1>
 
-                <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Multilingual SDU graduate and frontend developer with expertise in React, Tailwind CSS, and JavaScript. NFactorial bootcamp alumnus with experience developing responsive, API-integrated applications. Proficient in four languages, with a strong background in teaching and cross-cultural communication.
-                </p>
+               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+  IT Specialist and Engineer with hands-on experience in production infrastructure, digital broadcasting, and web development. A fast learner with a proven track record, including an nFactorial Gold Certificate. Proficient in 5+ languages with experience at 35+ international events, I leverage technical expertise and systems thinking to support and modernize industrial-grade IT systems.
+</p>>
                 <div className=" pt-4 opacity-0 animate-fade-in-delay-4">
                     <a href="#project" className="cosmic-button">
                         View My Work

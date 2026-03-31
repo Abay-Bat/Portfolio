@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "California Movers Express",
     description: "Responsive commercial platform optimized for lead generation and conversion in the moving services industry.",
-    image: "./projects/California_Movers.png", // Ensure you add this image to your folder
+    image: "./projects/california.png", // Ensure you add this image to your folder
     tags: ["Lead Gen", "Mobile-First", "UI/UX", "Responsive Design"],
     launchURL: "https://california-movers-express.vercel.app/",
     gitHubURL: "https://github.com/Abay-Bat/CaliforniaMoversExpress", // Add the specific repo link if available

@@ -32,15 +32,15 @@ export const ContactSection = () => {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formData, // Sending the full object
+        formData,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
-      // 2. Sends the auto-reply to the SENDER (The User)
+      // 2. Sends the auto-reply to the SENDER
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID_RECEIVER, 
-        formData, // Sending the full object
+        formData,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
@@ -73,7 +73,6 @@ export const ContactSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Details */}
           <div className="space-y-8 ">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-6">
@@ -122,7 +121,6 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="bg-card p-8 rounded-lg shadow-xs border border-border">
             <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -135,7 +133,7 @@ export const ContactSection = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary outline-none transition-all"
-                  placeholder="Aya Shalkar"
+                  placeholder="Your Name"
                 />
               </div>
 
@@ -148,7 +146,7 @@ export const ContactSection = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary outline-none transition-all"
-                  placeholder="ayashalkar@gmail.com"
+                  placeholder="email@example.com"
                 />
               </div>
 
@@ -161,7 +159,7 @@ export const ContactSection = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary outline-none resize-none transition-all"
-                  placeholder="Hey, I would love to talk about..."
+                  placeholder="How can I help you?"
                 />
               </div>
 

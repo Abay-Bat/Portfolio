@@ -133,7 +133,7 @@ export const ContactSection = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary outline-none transition-all"
-                  placeholder="Your Name"
+                  placeholder="Aya Shalkar"
                 />
               </div>
 
@@ -146,7 +146,7 @@ export const ContactSection = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary outline-none transition-all"
-                  placeholder="email@example.com"
+                  placeholder="ayashalkar@example.com"
                 />
               </div>
 

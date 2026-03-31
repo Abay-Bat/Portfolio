@@ -3,6 +3,15 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "California Movers Express",
+    description: "Responsive commercial platform optimized for lead generation and conversion in the moving services industry.",
+    image: "./projects/California_Movers.png", // Ensure you add this image to your folder
+    tags: ["Lead Gen", "Mobile-First", "UI/UX", "Responsive Design"],
+    launchURL: "https://california-movers-express.vercel.app/",
+    gitHubURL: "https://github.com/Abay-Bat/CaliforniaMoversExpress", // Add the specific repo link if available
+  },
+  {
+    id: 2,
     title: "ArtNovus",
     description: "Platform connecting clients with trusted construction experts.",
     image: "./projects/Art.png",
@@ -11,20 +20,20 @@ const projects = [
     gitHubURL: "https://github.com/Abay-Bat/ArtNovus",
   },
   {
-    id: 2,
+    id: 3,
     title: "Qazaq News",
     description: "News app fetching and displaying articles from the NYT API.",
     image: "./projects/Qazaq_News.png",
-    tags: ["API Integration", "Async/Await", "Dynamic Routing", "Data Fetching"],
+    tags: ["API Integration", "Async/Await", "Dynamic Routing"],
     launchURL: "https://janalyqtar.vercel.app/",
     gitHubURL: "https://github.com/Abay-Bat/Qazaq-News.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "ToDo app",
     description: "Feature-rich task manager with persistent state and task filters.",
     image: "./projects/To_Do_App.png",
-    tags: ["React Hooks", "State Management", "Conditional Rendering", "UX Design"],
+    tags: ["React Hooks", "State Management", "UX Design"],
     launchURL: "https://project-4-to-do-app.vercel.app/",
     gitHubURL: "https://github.com/Abay-Bat/mini_task-toDo_list.git",
   },
